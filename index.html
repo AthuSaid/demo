@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link type="text/css" rel="stylesheet" href="./style/style.min.css"/>
+    </head>
+    <body>
+        <!-- Splash Screen -->
+        <div id="splash" class="active">Splash!</div>
+
+        <!-- App -->
+        <div id="app">
+
+            <!-- Header -->
+            <div id="header">
+                <div class="logo">Logo Here</div>
+            </div>
+
+            <!-- Navigation -->
+            <div id="menu">
+                <div class="menu-group">
+                    <div class="app-link active" data-page="pageOne">Page 1</div>
+                </div>
+                <div class="menu-group">
+                    <div class="app-link active" data-page="pageTwo">Page 2</div>
+                </div>
+            </div>
+
+            <!-- Pages -->
+            <div id="pages">
+                <!-- Page One -->
+                <div id="pageOne" class="page active">Page 1</div>
+
+                <!-- Page Two -->
+                <div id="pageTwo" class="page">Page 2</div>
+            </div> 
+            
+        </div>
+        <!-- End App -->
+
+        <!-- Global DOM -->
+        <div id="dialog"></div>
+        <div id="loader"><span></span></div>
+        <!-- End Global DOM -->
+
+        <script src="./js/app.js"></script>
+        <script>
+            /* Define settings */
+            let settings = {
+                debug: true
+            }
+
+            /* Start the application */
+            let app = Application(settings);
+        </script>
+    </body>
+</html>
